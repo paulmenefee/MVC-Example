@@ -1,26 +1,27 @@
 @startuml
-
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
-
-List <|-- AbstractList
-Collection <|-- AbstractCollection
-
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-Object[] elementData
-size()
+package "controller" {
+    Class ExceptionController
+    Class PurchaseController
+    Class SaleController
+    Class Settings
 }
 
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
+package "dal" {
+    Class DataStore
+    Interface IDataMapper
+    Interface IDataStore
+    Class TextDataStore
 }
 
+package "model" {
+    Class Cart
+    Class Customer
+    Class Product
+}
+
+package "view" {
+    Console <-- IUserView
+    Class Display
+    Class IUserView
+}
 @enduml
