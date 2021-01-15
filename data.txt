@@ -1,0 +1,6 @@
+1,"Jelly Bellys","Black licorice is best",.50f, CANDY
+2,"M & Ms","Why are the no black ones?",.75, CANDY
+3,"Crackers","blah",1, FOOD
+4,"Cereal","Good for dinner too.",4.5, FOOD
+5,"Socks","They are warm.",3, CLOTHING
+6,"Shirt","It's blue.",5, CLOTHING
