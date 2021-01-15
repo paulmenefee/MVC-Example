@@ -6,9 +6,15 @@ public class Display {
     public enum UX {CONSOLE, GUI, API};
     private UX ux;
 
-    // Produces a display object of type specified.
-    // This is an example of an OBJECT FACTORY which can be
-    // refactored to be it's own class.
+    /**
+     * Produces a display object of type specified.
+     *
+     * This is an example of an OBJECT FACTORY which can be
+     * refactored to be it's own class.
+     * @see <a href="http://en.wikipedia.org/wiki/Factory_method_pattern">wikipedia.org</a>
+     * @param ux
+     * @return
+     */
     public static IUserView CreateDisplay(UX ux){
         switch(ux){
             case API:

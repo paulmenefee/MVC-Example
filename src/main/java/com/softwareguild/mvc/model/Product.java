@@ -17,7 +17,7 @@ public class Product {
         this.productCategory = product.productCategory;
     }
 
-    public Product (int id, String name, String description, float price, ProductCategory productCategory){
+    public Product(int id, String name, float price, ProductCategory productCategory){
         this.id = id;
         this.name = name;
         this.description = description;
